@@ -1,0 +1,394 @@
+.container {
+  background-color: beige;
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+}
+
+
+
+.showItem {
+
+  font-size: 1.1em;
+  padding-bottom: 0%;
+
+}
+
+
+
+.dieta-title {
+  text-align: center;
+  padding: 2%;
+}
+
+.izq {
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 32%;
+  margin: 3%;
+  height: 750px;
+  min-height: fit-content;
+
+
+}
+
+#buscador {
+  height: 30%;
+  min-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+  background-color: #def8a5;
+  padding: 5%;
+  border-radius: 25px;
+
+}
+
+
+
+
+#resultat {
+  height: 65%;
+  min-height: 60%;
+  min-width: fit-content;
+  background-color: #def8a5;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  gap: 50px;
+}
+
+#info {
+  height: 75%;
+}
+
+.botones-resultado {
+  height: 8%;
+  display: flex;
+  gap: 3%;
+  
+}
+
+
+
+.der {
+
+  width: fit-content;
+  min-width: 120vh;
+  display: flex;
+  margin: 1%;
+  flex-direction: column;
+  min-height: 100%;
+  justify-content: start;
+  margin-top: 3%;
+ 
+}
+
+
+#dieta {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  height: 100%;
+  min-height: fit-content;
+  background-color: #def8a5;
+  padding: 5%;
+
+
+
+}
+
+.tableContainer{
+  padding:3%;
+}
+
+
+.button {
+  background-color: #b1ff71cb;
+  border-radius: 12px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
+  color: rgba(0, 128, 0, 0.459);
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  padding: 5px 30px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 1em;
+  width: 30%;
+  min-width: 30%;
+}
+
+.button:hover {
+  box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+
+
+.input {
+  align-items: center;
+  background-color: #FCFCFD;
+  border-radius: 3px;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  color: #36395A;
+  cursor: pointer;
+  font-family: "JetBrains Mono", monospace;
+  height: 28px;
+  justify-content: center;
+  line-height: 1;
+  overflow: hidden;
+  padding-left: 5px;
+  padding-right: 5px;
+  min-height: 20px;
+  text-align: left;
+  transition: box-shadow .15s, transform .15s;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+  min-height: fit-content;
+  padding: 3.3%;
+  margin-top: 0.5%;
+  width: 65%;
+  height: 1%;
+}
+
+.input:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.input:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+#inputNumber {
+  width: 15%;
+  font-size: 18px;
+  padding: 3.3%;
+}
+
+#buscar {
+  margin-bottom: 5%;
+}
+
+
+
+.delete {
+  background-color: #def8a5;
+}
+
+#guardar {
+  padding-left: 0px;
+  padding-right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#toPdf {
+  width: 10%;
+}
+
+.flexButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5%;
+
+}
+
+.pdfIcon {
+  width: 10%;
+  height: 10%;
+}
+
+#printPDF {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5%;
+  margin-top: 5%;
+}
+
+.trash {
+  width: 20px;
+  height: 20px;
+
+}
+
+/*.trash hover pointer*/
+.trash:hover {
+  cursor: pointer;
+}
+
+
+
+
+
+/*table*/
+
+.dietContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+}
+
+.tableContainer {
+  display: flex;
+  justify-content: top;
+  align-items: top;
+  flex-direction: column;
+  height: fit-content;
+
+}
+
+.table {
+
+  max-width: 90%;
+  margin-top: 0%;
+  background-color: #B7FF00;
+  border-color: #def8a5;
+
+  text-align: left;
+
+  background-color: #b1ff71cb;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  font-size: 2vh;
+
+}
+
+th {
+  max-width: 70%;
+  background-color: #b1ff7175;
+  border: 1px solid #55aa0044;
+  color: rgba(0, 128, 0, 0.459);
+  border-color: #def8a5;
+  border-collapse: collapse;
+  font-size: 2vh;
+
+}
+
+td {
+  max-width: 70%;
+  text-align: left;
+  font-size: 2vh;
+  border: 1px solid #55aa0044;
+
+
+
+}
+
+#dieta {
+  max-height: fit-content;
+  height: 100%;
+  border-radius: 10px;
+  padding-top: 0px;
+  margin-top: 0px;
+
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+  .input,#inputNumber{
+    font-size:3vh;
+  }
+  .container{
+    min-width: 70vh;
+    gap: 50vh;
+    max-height: 150vh;
+    font-size: 3vh;
+    
+
+    
+  }
+
+  #resultat{
+    font-size: 2vh;
+    min-height: 60vh;
+  }
+#buscador{
+  min-height: 40vh;
+  margin-top: 2vh;
+}
+.der{
+  margin-top: 75vh;
+}
+
+
+  .dieta,#buscador,#resultat {
+    min-width: 55vh;
+    max-width: 55vh;
+    width: fit-content;
+    
+  }
+  .table {
+
+    width: 100%;
+    margin-top: 0px;
+    padding:0px;
+    align-self: left;
+  }
+
+  th,
+  td {
+    font-size: 1.5vh;
+  }
+
+/*align button text on left*/
+  .button {
+    align-self: flex-start;
+
+  }
+
+ 
+
+  .container {
+    background-color: beige;
+    height: 100%;
+    width: 100%;
+  
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    #printPDF{
+      max-width: 20px;
+      max-height: 20px;
+    }
+  }
+
+  #printPDF{
+    width: 50px;
+
+  }
+
+  .dieta{
+    padding:0px;
+  }
+  .tableContainer{
+    min-width: 65vh;
+    align-items: start;
+  }
+
+  .botones-resultado{
+    flex-direction:column;
+    gap: 1vh;
+  }
+
+
+}
