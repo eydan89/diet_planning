@@ -74,7 +74,7 @@
   height: 8%;
   display: flex;
   gap: 3%;
-  
+
 }
 
 
@@ -89,7 +89,7 @@
   min-height: 100%;
   justify-content: start;
   margin-top: 3%;
- 
+
 }
 
 
@@ -106,8 +106,8 @@
 
 }
 
-.tableContainer{
-  padding:3%;
+.tableContainer {
+  padding: 3%;
 }
 
 
@@ -305,90 +305,99 @@ td {
 
 
 @media screen and (max-width: 1000px) {
-  .input,#inputNumber{
-    font-size:3vh;
+
+  .input,
+  #inputNumber {
+    font-size: 3vh;
   }
-  .container{
+
+  .container {
     min-width: 70vh;
     gap: 50vh;
-    max-height: 150vh;
+    min-height: 160vh;
     font-size: 3vh;
-    
+    padding-bottom: 3vh;
 
-    
+
+
   }
 
-  #resultat{
+  #resultat {
     font-size: 2vh;
     min-height: 60vh;
+
   }
-#buscador{
-  min-height: 40vh;
-  margin-top: 2vh;
-}
-.der{
-  margin-top: 75vh;
-}
+
+  #buscador {
+    min-height: 40vh;
+    margin-top: 2vh;
+  }
+
+  .der {
+    margin-top: 75vh;
+  }
 
 
-  .dieta,#buscador,#resultat {
-    min-width: 55vh;
-    max-width: 55vh;
-    width: fit-content;
+  .dieta,
+  #buscador,
+  #resultat {
+    min-width: 46vh;
+    max-width: 46vh;
+    padding-bottom: 3vh;
     
   }
-  .table {
 
-    width: 100%;
-    margin-top: 0px;
-    padding:0px;
-    align-self: left;
-  }
+
 
   th,
   td {
     font-size: 1.5vh;
   }
 
-/*align button text on left*/
+  /*align button text on left*/
   .button {
     align-self: flex-start;
 
   }
 
- 
+
 
   .container {
     background-color: beige;
     height: 100%;
     width: 100%;
-  
+
     display: flex;
     flex-direction: column;
     gap: 5px;
-    #printPDF{
+
+    #printPDF {
       max-width: 20px;
       max-height: 20px;
     }
   }
 
-  #printPDF{
+  #printPDF {
     width: 50px;
 
   }
 
-  .dieta{
-    padding:0px;
-  }
-  .tableContainer{
-    min-width: 65vh;
-    align-items: start;
-  }
-
-  .botones-resultado{
-    flex-direction:column;
+  .botones-resultado {
+    flex-direction: column;
     gap: 1vh;
+
   }
 
+  #dieta{
+    min-width: fit-content;
+    padding: 3%;
+  }
+
+  .button,.input{
+    z-index: 999;
+  }
+  #buscar{
+    margin-bottom: 5%;
+  }
 
 }
