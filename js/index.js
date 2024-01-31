@@ -253,7 +253,7 @@ function calcTotal() {
 
 
     divTotalCantidad.innerHTML = `${totalCantidad}g`;
-    divTotalKcal.innerHTML = `${totalKcal.toFixed(0)}g`;
+    divTotalKcal.innerHTML = `${totalKcal.toFixed(0)}`;
     divTotalProteina.innerHTML = `${totalProteina.toFixed(2)}g`;
     divTotalGrasas.innerHTML = `${totalGrasas.toFixed(2)}g`;
     divTotalCarbohidratos.innerHTML = `${totalCarbohidratos.toFixed(2)}g`;
